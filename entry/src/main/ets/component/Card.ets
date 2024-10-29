@@ -17,6 +17,7 @@ export struct Card {
 
     Column() {
       Text(this.title)
+        .fontSize(14)
         .openContentCover()
     }
 
@@ -33,7 +34,7 @@ export struct Card {
     })
     .border({
       width: 1,
-      color: '#ffa9a5a5'
+      color: '#ffeae8e8'
     })
     .borderRadius(10)
     .bindContentCover(this.isPresent, this.componentBuilder(), {
@@ -57,7 +58,7 @@ export struct Card {
         .alignSelf(ItemAlign.Start)
 
       this.component()
-        
+
       Button('关闭')
         .onClick(() => {
           this.isPresent = !this.isPresent;
