@@ -1,4 +1,5 @@
 import RowColumn from './01-row-column/Index'
+import StackIndex from './02-stack'
 
 @Entry
 @Component
@@ -11,6 +12,7 @@ struct Layout {
         .padding(20)
 
       RowColumn()
+      StackIndex()
     }
     .width('100%')
     .height('90%')
