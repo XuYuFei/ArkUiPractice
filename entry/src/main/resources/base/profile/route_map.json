@@ -1,0 +1,24 @@
+{
+  "routerMap": [
+    {
+      "name": "Layout",
+      "pageSourceFile": "src/main/ets/pages/ui/01-layout/Layout.ets",
+      "buildFunction": "LayoutPageBuilder"
+    },
+    {
+      "name": "RowColumn",
+      "pageSourceFile": "src/main/ets/pages/ui/01-layout/01-row-column/Index.ets",
+      "buildFunction": "RowColumnPageBuilder"
+    },
+    {
+      "name": "Stack",
+      "pageSourceFile": "src/main/ets/pages/ui/01-layout/02-stack/Index.ets",
+      "buildFunction": "StackPageBuilder"
+    },
+    {
+      "name": "Flex",
+      "pageSourceFile": "src/main/ets/pages/ui/01-layout/03-flex/Index.ets",
+      "buildFunction": "FlexPageBuilder"
+    }
+  ]
+}

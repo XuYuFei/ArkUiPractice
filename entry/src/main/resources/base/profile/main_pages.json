@@ -1,6 +1,5 @@
 {
   "src": [
-    "pages/Index",
-    "pages/ui/01-layout/Layout"
+    "pages/Index"
   ]
 }

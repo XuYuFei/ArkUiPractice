@@ -1,25 +1,32 @@
-import RowColumn from './01-row-column/Index'
-import StackIndex from './02-stack'
-import FlexIndex from './03-flex'
+import { CommonRoutePage } from '../../../common/component/CommonRoutePage'
+import NavigationList from '../../../common/component/NavigationList'
 
 @Preview
-@Entry
 @Component
-struct Layout {
-  build() {
-    Column({ space: 10 }) {
-      Text('构建布局')
-        .fontWeight(FontWeight.Bold)
-        .fontSize(24)
-        .padding(20)
+export default struct Layout {
+  private title: string = ''
+  private listArray: string[] = ['RowColumn', 'Stack', 'Flex']
 
-      RowColumn()
-      StackIndex()
-      FlexIndex()
+  build() {
+    Stack() {
+      NavigationList({
+        title: this.title,
+        listArray: this.listArray
+      })
     }
-    .width('100%')
-    .height('90%')
-    .justifyContent(FlexAlign.Start)
-    .alignItems(HorizontalAlign.Start)
   }
+}
+
+@Builder
+function LayoutBuilder() {
+  Layout()
+}
+
+@Builder
+export function LayoutPageBuilder(name: string, param: string) {
+  CommonRoutePage({
+    name,
+    value: param,
+    context: LayoutBuilder
+  })
 }

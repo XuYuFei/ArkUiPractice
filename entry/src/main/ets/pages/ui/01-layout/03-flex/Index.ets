@@ -2,6 +2,21 @@ import { UiModule } from "../../../../common/component/UiModule"
 import * as UiBuilder from './Builder'
 import { Card } from '../../../../common/component/Card'
 import { Title } from '../../../../common/component/Title'
+import { CommonRoutePage } from "../../../../common/component/CommonRoutePage"
+
+@Builder
+export function FlexPageBuilder(name: string, param: string) {
+  CommonRoutePage({
+    name,
+    value: param,
+    context: FlexBuilder
+  })
+}
+
+@Builder
+function FlexBuilder() {
+  Index()
+}
 
 @Preview
 @Component

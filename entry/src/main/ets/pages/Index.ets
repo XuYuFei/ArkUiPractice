@@ -1,20 +1,17 @@
-import { router } from '@kit.ArkUI';
+import NavigationList from '../common/component/NavigationList';
 
 @Entry
 @Component
 struct Index {
+  private title: string = 'ArkUI'
+  private listArray: string[] = ['Layout']
 
   build() {
-    Column() {
-      Button('01-layout')
-        .onClick(() => {
-          router.pushUrl({
-            url: "pages/ui/01-layout/Layout"
-          })
-        })
+    Stack() {
+      NavigationList({
+        title: this.title,
+        listArray: this.listArray
+      })
     }
-    .height('100%')
-    .width('100%')
-    .justifyContent(FlexAlign.Center)
   }
 }
