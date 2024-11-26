@@ -5,7 +5,7 @@ import NavigationList from '../../../common/component/NavigationList'
 @Component
 export default struct Layout {
   private title: string = ''
-  private listArray: string[] = ['RowColumn', 'Stack', 'Flex']
+  private listArray: string[] = ['RowColumn', 'Stack', 'Flex', 'RelativeContainer']
 
   build() {
     Stack() {

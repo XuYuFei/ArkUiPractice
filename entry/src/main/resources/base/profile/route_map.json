@@ -19,6 +19,11 @@
       "name": "Flex",
       "pageSourceFile": "src/main/ets/pages/ui/01-layout/03-flex/Index.ets",
       "buildFunction": "FlexPageBuilder"
+    },
+    {
+      "name": "RelativeContainer",
+      "pageSourceFile": "src/main/ets/pages/ui/01-layout/04-relative-container/Index.ets",
+      "buildFunction": "RelativeContainerPageBuilder"
     }
   ]
 }
